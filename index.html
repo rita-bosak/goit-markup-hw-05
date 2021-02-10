@@ -65,7 +65,7 @@
                
                 <div class="hero-title-container">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="hero-modal-btn">Заказать услугу</button>
+                    <button type="button" class="hero-modal-btn" data-modal-open>Заказать услугу</button>
                 </div>
                 
             </div>
@@ -129,10 +129,20 @@
         <section class="about">
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
+                
                 <ul class="about-list list">
-                    <li class="about-list-item"><img src="./images/about_us_img/about_us_1.jpg" alt="Пишет код" width="370" height="294"></li>
-                    <li class="about-list-item"><img src="./images/about_us_img/about_us_2.jpg" alt="Адаптирует сайт для телефона" width="370" height="294"></li>
-                    <li class="about-list-item"><img src="./images/about_us_img/about_us_3.jpg" alt="Работает с планшетом" width="370" height="294"></li>
+                    <li class="about-list-item">
+                        <img src="./images/about_us_img/about_us_1.jpg" alt="Адаптирует сайт для телефона" width="370" height="294">
+                        <p class="about-list-description">Десктопные приложения</p>
+                    </li>
+                    <li class="about-list-item">
+                        <img src="./images/about_us_img/about_us_2.jpg" alt="Пишет код" width="370" height="294">
+                        <p class="about-list-description">Мобильные приложения</p>
+                    </li>
+                    <li class="about-list-item">
+                        <img src="./images/about_us_img/about_us_3.jpg" alt="Работает с планшетом" width="370" height="294">
+                        <p class="about-list-description">Дизайнерские решения</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -229,7 +239,7 @@
                             </ul>     
                             
                         </div>
-                    
+                    </li>
 
                     <li class="team-list-item">
                         <img class="img" src="./images/our_team_img/nikolay.jpg" alt="Фото" width="270" height="260">
@@ -273,7 +283,7 @@
                                 </li> 
                             </ul>  
                         </div>
-                    
+                    </li>
 
                     <li class="team-list-item">
                         <img class="img" src="./images/our_team_img/mihail.jpg" alt="Фото" width="270" height="260">
@@ -432,6 +442,17 @@
             </div>
 
         </div>
+        
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close-btn" data-modal-close>
+                    <svg class="modal-close-icon">
+                        <use href="./images/sprite.svg#close-black"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
