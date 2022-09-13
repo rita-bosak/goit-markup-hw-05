@@ -1,1 +1,1 @@
-# goit-markup-hw-05
+Create modal window, add animation for decorative elements
